@@ -5,8 +5,8 @@
 ; If you want to contribute an incomplete file, estimate the percentage completeness and update it in the metadata section.
 
 [metadata]
-language = 中華民國文 (ch)
-langcode = ch
+language = 中華民國文 (zh)
+langcode = zh
 ; These MUST match existing file names in the repo
 contributors = 女神_a#3330
 completeness = 100%%

@@ -1,0 +1,169 @@
+; Thank you for showing interest in translating ConfessionBot!
+; Copy this file and rename it to your country code / dialect (eg. en-US or jp-JP).
+; Translate everything that isn't within [square brackets] {curlybraces} or `backticks`.
+; Create a pull request with your file or send the file to Yiays#5930 when you are done.
+; If you want to contribute an incomplete file, estimate the percentage completeness and update it in the metadata section.
+
+[metadata]
+language = 中華民國文 (zh)
+langcode = zh
+; These MUST match existing file names in the repo
+contributors = 女神_a#3330
+completeness = 100%%
+; Note that you need to use 2 percent signs, not one.
+
+[nouns]
+language = language
+
+[introduction]
+hi = 嘿，我剛剛被添加到 {server}！為了讓我的功能發揮作用，你需要去一個懺悔頻道並輸入 `{prefix}set`。
+
+[help]
+title = {botname} 幫助
+invitecta = 邀請我到你自己的服務器！
+usagesummary = 私訊我讓你的匿名消息出現在伺服器上！
+admindisclaimer = 大多數命令僅供管理員使用。
+moddisclaimer = Baning 和 shuffling 只適用於版主。
+everyonedisclaimer = 每個人都可以使用列表頻道。
+emptycommandhint = 使用 unban 或 ​demote 命令，沒有值將顯示當前 banned/promoted 的用戶列表
+botowner = {botname} v{version} by {authorname}
+langdesc = 更改在伺服器中發送消息的語言（或你自己在私訊中時）。如果可用文字將以您的語言顯示。
+setdesc = 設置告白頻道。使用 `{prefix}unset` 取消設置。
+untracedesc = 像 `{prefix}set`，但 anon-ids 是隱藏的，因此無法區分或禁止他們。
+vettingdesc = 設置一個頻道讓版主可以在告白被發送到公開頻道前接受或拒絕告白
+feedbackdesc = 設置一個私人頻道，服務器上的任何人都可以在沒有看到的情況下告白。
+listdesc = 列出此服務器上所有當前可用的告白頻道。
+bandesc = 禁止任何 anon-id 。禁令仍然存在與 shuffles 之間，因此請注意他們的 anon-id 。用 `{prefix}unban` 來取消禁令。
+shuffledesc = 每當有人被發現時，重置所有 anon-ids 以使其匿名。
+prefixdesc = 更改此服務器的機器人前綴。使用 `{prefix}unsetprefix` 撤消
+imagedesc = 允許在匿名消息中發送圖像。默認啟用。 使用 `{prefix}disableimage` 禁用
+promotedesc = 提升服務器中的用戶，讓他們無需成為 mod 即可隨機播放 anon-ids 。使用 `{prefix}demote` 降級。
+
+[error]
+invalidlang = 找不到匹配的語言！
+admindenied = 您必須是管理員才能使用此命令！
+moddenied = 您必須是版主才能使用此命令！
+modpromotedenied = 您必須是版主或經批准的人才能使用此命令！
+dmsdenied = 此命令也不能在私訊中使用。
+inaccessible = 沒有您可以查看的告白頻道。
+inaccessiblelocal = 在此服務器上沒有您可以訪問的告白頻道。
+invalidanonid = 您提供的 anon-ids 似乎無效！
+doublebananonid = 那個 anon-id 已經被禁止了！
+missinganonid = 您需要在命令後粘貼用戶的 anon-id ！
+missingmention = 您需要在命令中提及用戶。
+nomatchanonid = 我找不到那個 anon-id 。
+missingperms = 發送匿名消息失敗，因為我需要此頻道的 {perm} 權限。
+timeouterror = 取消。
+singlechannel = 這只能在每個服務器的一個通道上設置。
+incorrectformat = 請格式化 {item} 像這樣; {format}
+vettingrequiredmissing = 用戶的告白或選擇的頻道（{channel}）都無法訪問！
+
+[warning]
+cachebuilding = 剛剛發布了 {botname} 的更新或錯誤修復。重新啟動時，表白頻道列表可能不完整。
+cacheeta = 完成此操作大約需要 {s} 分鐘。
+vetting = 您參與的至少一台服務器正在使用審查，這意味著版主可能需要在您的告白發送之前批准您的告白。
+vettingnote = 不會告訴版主是誰發送的告白，就像其他人一樣。
+
+[confessions]
+embederr = 發送消息失敗！我很可能失去了發送嵌入式消息的權限。
+missingchannelerr = 無法通過此頻道發送消息！它可能不存在，或者我失去了訪問權限。
+multipletargets = 我可以在多個服務器/頻道看到你！請選一個。
+multipletargetsshort = 請選一個。
+notargethelp = 您似乎無法向任何告白頻道發送消息！要求其中一位管理員 `cb!set` 一個告白頻道或者先請求允許在那裡發送常規消息。
+banned = 不行，你在這台服務器上被禁止了。
+noimages = 不行，此服務器已禁用匿名圖像。
+
+[setlanguage]
+nolanghelp = 使用 `{prefix}setlanguage ch` 設置語言，其中 `ch` 是您的語言代碼。
+success = 我現在會在這台服務器上說 {langname}！
+warning = 如果開始翻譯 {langname}，它將自動在此服務器上使用。
+warningdm = 如果開始翻譯 {langname}，它將自動與您一起使用。
+warninghint = 請務必使用 `{prefix}setlanguage` 檢查語言列表，以查看是否存在足夠接近的現有翻譯。
+undo = 您可以使用 `{prefix} setlanguage {defaultlang}` 恢復默認設置。
+autocomplete = 請選擇一個方言......
+list = 以下是迄今為止翻譯的語言列表：
+listtitle = 可用的翻譯
+contributorslabel = 貢獻者：
+completenesslabel = 完整性：
+promo = 考慮在以下URL做出貢獻 {url}
+missinglangpromo = 如果您想添加一種語言，請考慮在以下URL上做出貢獻 {url}
+; Be careful putting grammar around {url}s, it may be mistaken for part of the url.
+
+[set]
+successtraceable = 這個頻道現在將用於帶有ID的匿名告白！
+successuntraceable = 這個頻道現在將用於沒有ID的匿名告白！
+successvetting = 這個頻道現在將用於審查告白。
+vettingwarning = 確保只有版主才能訪問此頻道！
+successfeedback = 此頻道現在將用於匿名反饋！
+calltoaction = 私訊我開始你的告白！
+undo = （使用 `{prefix}unset` 來撤銷這個）
+
+[unset]
+success = 此頻道將不再用於匿名告白。
+successvetting = 該頻道將不再用於審查告白。
+successfeedback = 此頻道將不再用於匿名反饋。
+undo = 確保至少有一個頻道（使用 `{prefix}set`）！
+
+[list]
+success = 您可以向這些頻道發送告白：
+successlocal = 您可以在此服務器上向這些頻道發送告白：
+adminhint = 管理員需要 `{prefix}set` 一個頻道才能啟動。
+
+[ban]
+success = {user} 已被永久禁止，
+undo = 如果您想取消禁止它們，請務必記下此 ID。
+
+[unban]
+success = {user} 已被解禁。
+list = 這是目前被禁止的 anon-ids 列表;
+emptylist = 此服務器目前沒有人被禁止！
+hint = 使用 `{prefix}unban anon-id` 來取消禁止它們。
+
+[shuffle]
+; This 'yes' must remain a 'yes' in translation.
+banresetwarning = 洗牌將重置所有有效禁令。 回答 'yes' 以繼續。
+obsoleteone = 不再支持洗牌一個用戶 ID 。
+successone = 打亂了 {shuffledcount} 成員 {s} 的 anon-id{s} 。
+successall = 此服務器上的所有 anon-ids 都已洗牌！
+
+[promote]
+success = {user} 已被提升，他們現在可以洗牌服務器 anon-ids 。
+selfpromoteerr = 我不是在推銷自己。
+repromoteerr = 該用戶已被提升。
+modpromoteerr = 不需要，該成員已經可以洗牌 anon-ids 因為他們有禁止成員的權限。
+undo = 您可以隨時用 `{prefix}demote` 降級它們。
+
+[demote]
+success = {user} 已被降級，他們不能再洗牌 anon-ids 。
+notpromotederr = 該用戶似乎沒有得到提升！
+list = 這是當前提升的用戶列表;
+emptylist = 該服務器當前沒有任何升級用戶。
+
+[setprefix]
+success = 此服務器的前綴現在是 `{prefix}` 。
+example = 例如 `{prefix}help` 。
+undo = 您可以使用 `{prefix}unsetprefix` 撤消此操作。
+
+[unsetprefix]
+success = 此服務器的前綴已重置為 `{prefix}` 。
+
+[enableimage]
+success = 此服務器上現已啟用匿名圖像！
+example = 只需私訊圖像給懺悔機器人！
+undo = 您可以使用 `{prefix}disableimage` 撤消此操作。
+redoerr = 此服務器上已啟用匿名圖像！沒有做任何改變。
+
+[disableimage]
+success = 此服務器上現已禁用匿名圖像。
+undo = 您可以使用 `{prefix}enableimage` 撤消此操作。
+redoerr = 此服務器上已禁用匿名圖像！沒有做任何改變。
+
+[mod]
+vetmessage = 來自 {channel} 的待處理消息。 *使用下面的反應來批准或拒絕。*
+vetaccepted = 這個告白被接受了。
+vetdenied = 這個告白被拒絕了。
+
+[admin]
+reloadsuccess = 重新加載配置和翻譯。
+diesuccess = 好的，關閉...
+admindenied = 沒有權限。不錯的嘗試，雖然。
